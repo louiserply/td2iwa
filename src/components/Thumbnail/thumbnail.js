@@ -23,7 +23,7 @@ export default class AppThumbnail extends React.Component {
 
 class GalleryItem extends React.Component {
   deleteItem() {
-    console.log('element deleted')
+    console.log('element deleted');
     names.pop()
   }
 
@@ -47,8 +47,8 @@ class Gallery extends React.Component {
     let newArray = this.props.thumbnailNames.slice();
     newArray.push("Franklin");
     this.setState({thumbnailNames: newArray});*/
-    console.log('pushed')
-    names.push('Franklin')
+    console.log('pushed');
+    names.push('Franklin');
 
 
   };
