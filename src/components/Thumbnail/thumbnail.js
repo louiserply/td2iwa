@@ -22,6 +22,11 @@ export default class AppThumbnail extends React.Component {
 }
 
 class GalleryItem extends React.Component {
+  deleteItem() {
+    console.log('element deleted')
+    names.pop()
+  }
+
   render() {
     return (<Card>
       <Card.Content>
@@ -30,7 +35,7 @@ class GalleryItem extends React.Component {
         </Card.Header>
       </Card.Content>
       <Card.Content extra>
-        <Button basic color='red'>Delete</Button>
+        <Button basic color='red'onClick={this.deleteItem}>Delete</Button>
       </Card.Content>
     </Card>)
   }
@@ -38,10 +43,14 @@ class GalleryItem extends React.Component {
 
 class Gallery extends React.Component {
   addGalleryItem() {
-    //this.props.thumbnailNames.push('Franklin');
+    /*this.props.thumbnailNames.push('Franklin');
     let newArray = this.props.thumbnailNames.slice();
     newArray.push("Franklin");
-    this.setState({thumbnailNames: newArray});
+    this.setState({thumbnailNames: newArray});*/
+    console.log('pushed')
+    names.push('Franklin')
+
+
   };
 
   render() {
